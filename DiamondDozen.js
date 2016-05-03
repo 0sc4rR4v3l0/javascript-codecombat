@@ -26,8 +26,8 @@ function findOptimalCoin(coins){
     var d = 0;
     while ( b < coins.length) {
         var c = coins[b];
-        if ( c.value  > d ) {
-            d = c.value;
+        if ( c.value/hero.distanceTo(c)  > d ) {
+            d = c.value/hero.distanceTo(c);
             a = c;
             
            
